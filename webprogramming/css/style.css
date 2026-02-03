@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    background-color: #021526;
+    color: white;
+  }
+
+/****************   Nav Section **********************/
+nav {
+	background-color: #6EACDA;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 10px;
+    position: sticky;
+    top: 0;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+    background-color: #6EACDA;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-inline: 10px;
+}
+
+/*********** Splash Page ************************/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: aliceblue;
+}
+
+header img {
+    padding-top: 20px;
+    max-width: 30%;
+    border-radius: 100%;
+}
+
+.address {
+    padding-inline: 10px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.tagline {
+    text-align:center;
+    padding-inline: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/************* Sections ********************/
+hr {
+
+}
+
+section h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: aliceblue;
+}
+
+section dl {
+    display: grid;
+}
+
+section ul {
+    font-style: italic;
+    font-family: 'Ubuntu', sans-serif;
+    color: aliceblue;
+}
+
+section a {
+    color: wheat;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #6EACDA;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px black  ;
+    outline: grey solid 1px;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .three-col {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10%;
+    padding-block: 20px
+}
+
+input {
+    background-color: grey;
+    border-radius: 15px;
+
+}
+
+textarea {
+    background-color: grey;
+    border-radius: 15px;
+}
