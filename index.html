@@ -4,25 +4,166 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dylan Barfield</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <h1>Dylan Barfield</h1>
-    <h2>Skills</h2>
-    <ul>
-      <li>Playing the clarinet</li>
-      <li>Coding</li>
-      <li>Teamwork</li>
-    </ul>
+    <header>
+      <nav>
+        <h1 class="name">Dylan Barfield</h1>
+        <contact-info>
+          <p class="contact-content">Email: <a class="contact-content" href="mailto:dylanbarfield22@gmail.com">dylanbarfield22@gmail.com</a></p>
+          <p class="contact-content">Github: <a class="contact-content" href="https://github.com/dbarf22">dbarf22</a></p>
+          <p class="contact-content">LinkedIn: <a class="contact-content" href="https://www.linkedin.com/in/dylan-barfield-0b0658292/">dylan-barfield</a></p>
+        </contact-info>
+      </nav>
+    </header>
 
-    <h2>Experience</h2>
+    <main>
+      <section>
+        <p>
+          Welcome to my website! I am a senior UGA Computer Science major and Film Studies minor
+          graduating in May 2026. Right now, my interests lie in creating things
+          that have immediate positive impacts on people's lives. Whether it's
+          through services designed to meet people's accessibility needs, sites
+          that allow people to express themselves and share what they love, or
+          experiences that provide meaningful interactions, I strive to create
+          things that I think are genuinely useful and enjoyable for people.
+          I have experience in full-stack development, and I love learning new technologies by
+          taking on new projects. 
+        </p>
+      </section>
 
-    <dl>
-      <dt>Studied at Oxford University</dt>
-      <dd>Summer 2025, Studied Artificial Intelligence and Computer Ethics</dd>
+      <section>
+        <h2>About Me</h2>
+        <p><b>Languages:</b> Java, Python, C, C++, Javascript, HTML, CSS, GDScript</p>
+        <p>
+          <b>Frameworks/Libraries:</b> React, Node.js, Svelte, MongoDB, Spring, DaisyUI
+        </p>
+        <p><b>Interests:</b> I absolutely watching movies and TV shows, listening to new albums, and trying out new games! Scroll
+          down to see some of my favorites.
+        </p>
+      </section>
 
-      <dt>Interactive Garden Project</dt>
-      <dd>Built a game within Godot that interfaces with Supabase</dd>
-    </dl>
+      <section>
+        <h2>What I've Been Working On</h2>
+        <ul>
+          <li class="card">
+            <img
+              src="assets/mediascheduler.png"
+              alt="Media Scheduler Screenshot"
+              class="project-image"
+            />
+            <div class="card-content">
+              <h3>Media Scheduler</h3>
+              <p>
+                A lightweight media scheduling app built with Python and
+                Alpine.JS. This app is designed to facilitate automated playback
+                of movies and TV episodes to a device running Jellyfin. This is
+                intended to allow caregivers to schedule media playback for
+                individuals who are otherwise unable to use or navigate
+                streaming interfaces on their own.
+              </p>
+              <a href="https://github.com/dbarf22/MediaScheduler"
+                >Visit Media Scheduler on Github</a
+              >
+            </div>
+          </li>
+
+          <li class="card">
+            <img
+              src="assets/recommender.png"
+              alt="Recommender Screenshot"
+              class="project-image"
+            />
+            <div class="card-content">
+              <h3>Recommender</h3>
+              <p>
+                A small, simple, and easy to use recommendation site built with
+                Svelte, Supabase, and DaisyUI. Simply visit the site, click the
+                plus, and recommend an album, show, or movie you like. Or,
+                browse recommendations from other users and read what they had
+                to say about their favorite media.
+              </p>
+              <a href="https://dbarf22-recommender.vercel.app"
+                >Visit Recommender</a
+              >
+            </div>
+          </li>
+
+          <li class="card">
+            <img
+              src="assets/garden.png"
+              alt="Garden Project Screenshot"
+              class="project-image"
+            />
+            <div class="card-content">
+              <h3>Garden Project</h3>
+              <p>
+                A small, interactive connection-focused experiment made with
+                Godot and Supabase, and hosted on itch.io. Users can navigate
+                around a virtual garden and anonymously plant flowers with
+                messages attached for others to read. There are limited spots in
+                the garden, and flowers expire after 24 hours.
+              </p>
+              <a href="https://github.com/dbarf22/garden-project"
+                >View Garden Project on GitHub</a
+              >
+              <a href="https://dbarf22.itch.io/garden-project"
+                >Visit Garden Project on itch.io</a
+              >
+            </div>
+          </li>
+
+          <li class="card">
+            <img
+              src="https://placehold.co/600x400/png"
+              alt="Cinema E-Booking System Screenshot"
+              class="project-image"
+            />
+            <div class="card-content">
+              <h3>Cinema E-Booking System</h3>
+            <p>
+              A group project I led where we developed a full application built
+              for movie theaters and their customers to manage bookings and
+              showtimes, create user accounts, and handle account information.
+              Front-end built with React, Tailwind CSS, and DaisyUI. Backend
+              written in Java with Spring, with a MySQL database.
+            </p>
+            <a href="https://github.com/dbarf22/group27cinema"
+              >View Cinema E-Booking System on GitHub</a
+            >
+            </div>
+          </li>
+
+          <li class="card">
+            <div class="card-content">
+              <h3>Last.FM API Project</h3>
+            <p>
+              A small app built to get familiar with JavaFX. Users can provide
+              the API key and secrets for their Last.FM account and see a list
+              of their most listened to songs. Then, users can click each song
+              to view that songs' lyrics using the Lyrist API.
+            </p>
+            <a href="https://github.com/dbarf22/lastfm-api-project"
+              >View Last.FM API Project on GitHub</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Favorite Stuff</h2>
+        <p><b>My current Letterboxd Top 4: </b>Paddington 2, Past Lives, It's Such a Beautiful Day, Worst Person in the World</p>
+        <p><b>Favorite games:</b> Half-Life 2, Portal 1 & 2, Bioshock, Bioshock Infinite, Cyberpunk 2077, Call of Duty: Black Ops 3</p>
+        <p><b>Favorite albums (right now): </b>I Love My Computer - Ninajirachi, For Melancholy Brunettes (and Sad Women) - Japanese Breakfast, Count Bateman - Frog, 
+        Patterns - Laura Marling, Homogenic - Bjork, Let God Sort Em Out - Clipse</p>
+      </section>
+    </main>
   </body>
 </html>

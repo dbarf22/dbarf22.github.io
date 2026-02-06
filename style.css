@@ -1,0 +1,104 @@
+:root {
+  --bg-color: #1e1e2e;
+  --bg-color-2: #181825;
+  --card-color: #11111b;
+  --text-color: #cdd6f4;
+  --subtext-color: #a6adc8;
+  --accent: #cba6f7;
+  --link-color: #89b4fa;
+}
+
+.google-sans-regular {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "GRAD" 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Google Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0 0 0;
+}
+
+.name {
+  color: #dc8a78;
+  background-image: linear-gradient(45deg, #dc8a78 45%, #7287fd 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  color: var(--subtext-color);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-content {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 2rem;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--card-color);
+}
+
+.card-content {
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
