@@ -6,6 +6,7 @@
   --subtext-color: #a6adc8;
   --accent: #cba6f7;
   --link-color: #89b4fa;
+  --page-width: 1400px;
 }
 
 .google-sans-regular {
@@ -15,6 +16,41 @@
   font-style: normal;
   font-variation-settings: "GRAD" 0;
 }
+
+.about-me{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--card-color);
+}
+
+.info-card h3 {
+  margin-bottom: 0;
+  padding-left: 1rem;
+  align-self: flex-start;
+}
+
+.info-card ul {
+  list-style: disc;
+  padding-inline: 2rem;
+  gap: 0;
+}
+
 
 body {
   background-color: var(--bg-color);
@@ -26,9 +62,9 @@ body {
 }
 
 header {
-  max-width: 800px;
+  max-width: var(--page-width);
   margin: 0 auto;
-  padding: 2rem 0 0 0;
+  padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .name {
@@ -67,7 +103,7 @@ a {
 }
 
 main {
-  max-width: 800px;
+  max-width: var(--page-width);
   margin: 0 auto;
   padding: 1rem 1.5rem 2rem;
   border-radius: 8px;
@@ -78,27 +114,58 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-ul {
-  display: flex;
-  flex-direction: column;
+.card-container ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   list-style: none;
   padding-left: 0;
   gap: 1.5rem;
 }
 
+@media (max-width: 1000px) {
+  .card-container ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    list-style: none;
+    padding-left: 0;
+    gap: 1.5rem;
+  }
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
   overflow: hidden;
   background-color: var(--card-color);
+  justify-content: space-between;
+}
+
+.card-link {
+  display: flex;
+  padding-left: 1rem;
+}
+
+.link-row {
+  display: flex;
 }
 
 .card-content {
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 0 1rem 0 1rem;
 }
 
+.card-content h3 {
+  margin-top: 12px
+}
+
+.card-content p {
+  margin-bottom: 0;
+}
+
+
 .project-image {
+  height: 400px;
   width: 100%;
-  height: 100%;
   object-fit: contain;
   display: block;
 }
