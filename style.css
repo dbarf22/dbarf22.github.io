@@ -47,7 +47,7 @@ header {
 }
 
 .headshot {
-  max-height: 140px;
+  max-height: 120px;
   border-radius: 30%;
   border: 1px solid var(--accent);
   @media (max-width: 1000px) {
